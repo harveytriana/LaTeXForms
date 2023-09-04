@@ -11,7 +11,7 @@ namespace LaTeXForms;
 
 public partial class MainForm : Form
 {
-    string[] samples = new string[] {
+    readonly string[] samples = new string[] {
         @"\frac{-b \pm \sqrt{b^2 + 4ac}}{2a}",
         @"\frac\sqrt23",
         @"e^{i \pi}",
@@ -27,7 +27,7 @@ public partial class MainForm : Form
 
     private void DrawSample(int sampleIndex)
     {
-        var p = pictureBox; // exists a PictureBox with name pictureBox
+        PictureBox p = pictureBox; // exists a PictureBox with name pictureBox
 
         // create canvas
         var imageInfo = new SKImageInfo(p.Width, p.Height);
