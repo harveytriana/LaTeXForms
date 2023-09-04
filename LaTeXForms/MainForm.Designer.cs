@@ -47,7 +47,7 @@
             this.ClientSize = new Size(478, 250);
             this.Controls.Add(pictureBox);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "LaTex from SkiSharp";
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
             this.ResumeLayout(false);
         }
