@@ -13,14 +13,16 @@ public partial class MainForm : Form
 {
     string[] samples = new string[] {
         @"\frac{-b \pm \sqrt{b^2 + 4ac}}{2a}",
-        @"\frac\sqrt23"
+        @"\frac\sqrt23",
+        @"e^{i \pi}",
+        @"\int_{a}^{b} u dv = u(x)v(x)|_a^b - \int^{b}_a v du"
     };
 
     public MainForm()
     {
         InitializeComponent();
 
-        DrawSample(0);
+        DrawSample(3);
     }
 
     private void DrawSample(int sampleIndex)
